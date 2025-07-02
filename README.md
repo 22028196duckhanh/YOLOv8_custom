@@ -6,7 +6,7 @@ Làm theo các bước sau trên terminal của server:
 
 **1. Clone repository này về máy:**
 ```bash
-git clone https://github.com/your-username/yolov8_custom.git
+git clone https://github.com/22028196duckhanh/YOLOv8_custom.git
 cd yolov8_custom
 ```
 
