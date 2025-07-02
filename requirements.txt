@@ -1,0 +1,10 @@
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.6.0
+ultralytics>=8.0.0,<8.1.0
+PyYAML>=6.0
+pandas
+matplotlib
+seaborn
+tqdm
+gdown
