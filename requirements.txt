@@ -1,5 +1,5 @@
 torch<2.6.0
-torchvision0<0.21.0
+torchvision<0.21.0
 opencv-python>=4.6.0
 ultralytics>=8.0.0,<8.1.0
 PyYAML>=6.0
