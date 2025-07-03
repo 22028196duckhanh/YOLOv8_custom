@@ -7,7 +7,7 @@ Làm theo các bước sau trên terminal của server:
 **1. Clone repository này về máy:**
 ```bash
 git clone https://github.com/22028196duckhanh/YOLOv8_custom.git
-cd yolov8_custom
+cd YOLOv8_custom
 ```
 
 **2. Cấp quyền thực thi cho file script:**
