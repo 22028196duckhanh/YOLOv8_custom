@@ -111,24 +111,24 @@ def main():
     data_yaml_path = create_dataset_yaml(settings.RUNS_DIR)
 
     # --- Bước 2: Đánh giá Baseline (Model gốc trên dữ liệu của bạn) ---
-    evaluate_model(
-        model_path=settings.BASE_MODEL, 
-        data_yaml_path=data_yaml_path, 
-        eval_name=f"baseline_eval_{timestamp}"
-    )
+    # evaluate_model(
+    #     model_path=settings.BASE_MODEL, 
+    #     data_yaml_path=data_yaml_path, 
+    #     eval_name=f"baseline_eval_{timestamp}"
+    # )
 
     # --- Bước 3: Huấn luyện model ---
     best_model_path = train_model(data_yaml_path, run_name)
 
     # --- Bước 4: Đánh giá lại model đã huấn luyện trên tập Test ---
-    if best_model_path:
-        evaluate_model(
-            model_path=best_model_path, 
-            data_yaml_path=data_yaml_path, 
-            eval_name=f"final_eval_{timestamp}"
-        )
-    else:
-        print("Bỏ qua bước đánh giá cuối cùng do không tìm thấy model đã huấn luyện.")
+    # if best_model_path:
+    #     evaluate_model(
+    #         model_path=best_model_path, 
+    #         data_yaml_path=data_yaml_path, 
+    #         eval_name=f"final_eval_{timestamp}"
+    #     )
+    # else:
+    #     print("Bỏ qua bước đánh giá cuối cùng do không tìm thấy model đã huấn luyện.")
 
     print("\n🎉🎉🎉 Toàn bộ quy trình đã hoàn tất! 🎉🎉🎉")
 
