@@ -40,6 +40,9 @@ else
     echo "Giải nén dataset..."
     unzip -q $DATASET_ZIP_NAME
     echo "Đã giải nén xong vào thư mục '$DATASET_DIR_NAME'."
+
+    echo "Xóa file ZIP '$DATASET_ZIP_NAME' để tiết kiệm dung lượng..."
+    rm $DATASET_ZIP_NAME
 fi
 
 # --- Bước 5: Chạy file huấn luyện chính ---
